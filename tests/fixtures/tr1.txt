@@ -1,0 +1,13 @@
+negociação
+faixa de negociação
+intervalo de negociação
+lacuna
+trocar
+comerciante
+cambista
+faixa de negociação
+bear
+bull
+long
+short
+medido
