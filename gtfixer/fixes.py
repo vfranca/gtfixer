@@ -1,6 +1,8 @@
-# encoding: utf-8
+"""
+Lista de palavras a serem substituídas
+"""
 
-correcoes ={
+fixes = {
     "tendência contrária": "contra-tendência",
     "couro cabeludo": "scalp",
     "trocar": "operar",
