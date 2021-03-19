@@ -1,15 +1,17 @@
-import click
-from gtfixer.gtfixer import fixer
+"""
+Scripts de console
+"""
+from gtfixer import gtfixer
 from gtfixer.fixes import fixes
+import click
+
 
 
 @click.command()
-@click.option(
-    "--translation", "-t", default="trans.txt", help="Arquivo que contem a tradução"
-)
-@click.option(
-    "--fixed", "-f", default="fixed.txt", help="Arquivo que conterá a correção"
-)
-def fix(translation, fixed):
-    click.echo(fixer(translation, fixed, fixes))
+@click.option("--traducao", "-t", default="traducao.txt", help="Traducao do Google Translator")
+@click.option("--correcao", "-c", default="correcao.txt", help="Correcao da traducao")
+def cli(traducao, correcao):
+    """Corrige traducoes do Google Translator."""
+    fix = gtfixer.fixer(traducao, correcao, fixes)
+    click.echo("As correcoes foram feitas com sucesso!")
     return 0

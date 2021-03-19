@@ -11,8 +11,8 @@ class TestGTFixer(TestCase):
             "vela": "barra",
         }
         fixtures_path = path.join(path.abspath("."), "tests", "fixtures")
-        self.f_trans = path.join(fixtures_path, "translation.txt")
-        self.f_fixed = path.join(fixtures_path, "fixed.txt")
+        self.f_trans = path.join(fixtures_path, "traducao.txt")
+        self.f_fixed = path.join(fixtures_path, "correcao.txt")
 
     def test_gera_uma_traducao_corrigida(self):
         fixer(self.f_trans, self.f_fixed, self.fixes)
